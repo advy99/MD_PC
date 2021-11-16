@@ -121,6 +121,11 @@ library(ISLR)
 
 # Poner aqui la solucion al ejercicio 3.1.2.
 
+datos = Auto
+
+# Pongo la variable "origin" (datos[,8]) como de tipo factor
+datos[,8] = as.factor(datos[,8])
+
 Graphical_RF(datos,origin~.-name,100)
 
 
